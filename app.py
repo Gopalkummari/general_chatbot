@@ -62,6 +62,14 @@ st.markdown("""
         border: 1px solid #4A5568 !important;
         background-color: #2D3748 !important;
     }
+    
+    /* Chat message text color explicitly white */
+    [data-testid="stChatMessageContent"] {
+        color: #FFFFFF !important;
+    }
+    [data-testid="stMarkdownContainer"] p {
+        color: #FFFFFF !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
