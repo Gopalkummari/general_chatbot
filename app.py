@@ -67,13 +67,13 @@ st.markdown("""
 
 # --- Sidebar ---
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", width=150)
+    st.markdown("## ⚕️ System Menu")
     st.markdown("### ⚙️ Settings")
     temperature = st.slider("Creativity (Temperature)", min_value=0.0, max_value=1.0, value=0.7, step=0.1)
     
     st.markdown("---")
     st.markdown("### 💡 About")
-    st.markdown("This is a premium health chatbot system powered by Google's latest **Gemini 2.5 Flash** model. It features a responsive UI and conversational memory.")
+    st.markdown("This is a premium, secure health chatbot system. It features a highly responsive UI, conversational memory, and advanced reasoning capabilities.")
     
     st.markdown("---")
     if st.button("🗑️ Clear Chat History", use_container_width=True):
