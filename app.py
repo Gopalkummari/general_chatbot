@@ -15,6 +15,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+import os
+if "GEMINI_API_KEY" not in os.environ and "GOOGLE_API_KEY" not in os.environ:
+    st.error("🔑 **API Key Missing!**\n\nIt looks like you are running this on Streamlit Cloud but haven't added your API key yet.\n\nTo fix this:\n1. Go to your Streamlit Cloud Dashboard.\n2. Click the three dots (⋮) next to your app and select **Settings**.\n3. Go to the **Secrets** tab.\n4. Paste this exact line and save:\n\n`GEMINI_API_KEY=\"your-actual-api-key\"`")
+    st.stop()
+
+
 st.markdown("""
 <style>
     /* Main background and text */
